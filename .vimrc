@@ -1,12 +1,13 @@
 " ---------------------------
 " Basic editing preferences
 " ---------------------------
-set tabstop=4           " A tab character looks like 4 spaces
-set shiftwidth=4        " Indent by 4 spaces
+set tabstop=2           " A tab character looks like 2 spaces
+set shiftwidth=2        " Indent by 2 spaces
+set softtabstop=2       " Backspace over indentation in 2-space steps
 set expandtab           " Use spaces instead of tabs
 set autoindent          " Copy indent from current line when starting a new one
-set smartindent         " Smart C-like autoindenting
 set smarttab            " Make <Tab> at start of line insert shiftwidth spaces
+filetype plugin indent on " Use language-specific indentation when available
 
 " ---------------------------
 " Search
@@ -48,4 +49,3 @@ call plug#end()
 syntax on               " Enable syntax highlighting
 " set termguicolors       " True color support (needed for many modern themes)
 colorscheme codedark
-
